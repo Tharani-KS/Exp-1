@@ -29,9 +29,50 @@ manipulation and analysis in Python.
 
 ## Coding
 
+# Step 1: Import the required libraries
+import numpy as np
+import pandas as pd
+
+# Step 2: Define a matrix and vector
+A = np.array([[4, 2], [3, 1]])
+b = np.array([10, 7])
+
+# Step 3: Find the transpose of the matrix
+transpose = np.transpose(A)
+
+# Step 4: Find the inverse of the matrix
+inverse = np.linalg.inv(A)
+
+# Step 5: Solve the linear equations
+solution = np.linalg.solve(A, b)
+
+# Step 6: Find eigenvalues and eigenvectors
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+# Step 7: Display the results
+print("Original Matrix:")
+print(A)
+
+print("\nTranspose of Matrix:")
+print(transpose)
+
+print("\nInverse of Matrix:")
+print(inverse)
+
+print("\nSolution of Linear Equations:")
+print(solution)
+
+print("\nEigenvalues:")
+print(eigenvalues)
+
+print("\nEigenvectors:")
+print(eigenvectors)
 
 ## Output
+
+<img width="365" height="462" alt="image" src="https://github.com/user-attachments/assets/fabf3118-93b8-486e-bf61-f9bb4407e87c" />
 
 
 ## Result
 
+Thus, the NumPy and Pandas libraries were explored using Python. Matrix operations such as transpose, inverse, solving linear equations, and eigenvalue and eigenvector calculation were successfully performed using NumPy.
